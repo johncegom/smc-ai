@@ -1,0 +1,41 @@
+@import "./ultilize.css";
+
+.sidebar {
+  background-color: var(--lighter-background-color);
+  height: 100vh;
+  width: 20%;
+}
+
+.sidebar__title {
+  font-size: 1.25rem;
+  margin-top: 1em;
+  cursor: default;
+  user-select: none;
+}
+
+.sidebar__list {
+  margin-top: 2em;
+}
+
+.sidebar__link {
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.sidebar__link a {
+  color: var(--secondary-highlight-color);
+}
+
+.sidebar__link:hover,
+.btn__logout:hover {
+  background-color: var(--highlight-color);
+  font-weight: bold;
+}
+
+.btn__logout {
+  border: none;
+  background: none;
+  color: var(--secondary-highlight-color);
+  cursor: pointer;
+  font-size: 1rem;
+}
