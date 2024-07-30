@@ -1,0 +1,17 @@
+@import "./ultilize.css";
+
+.from-scratch__caption {
+  margin: 1em 0;
+}
+
+.btn__generate {
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.service__list {
+  margin-top: 3em;
+  gap: 2em;
+}

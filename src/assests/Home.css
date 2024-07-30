@@ -1,0 +1,11 @@
+@import "./ultilize.css";
+
+.home__title {
+  margin-top: 0.5em;
+}
+
+.home__subtitle {
+  margin-top: 1em;
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}

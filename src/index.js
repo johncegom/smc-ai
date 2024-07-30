@@ -10,6 +10,9 @@ import Login from "./routes/Login";
 import Services from "./routes/Services";
 import Profile from "./routes/Profile";
 import { AuthProvider } from "./contexts/AuthContext";
+import FromScratch from "./routes/FromScratch";
+import GetInspired from "./routes/GetInspired";
+import SocialMedia from "./routes/SocialMedia";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,12 @@ const router = createBrowserRouter([
             path: "services",
             element: <Services />,
           },
+          { path: "/services/from-scratch", element: <FromScratch /> },
+          {
+            path: "/services/from-scratch/:socialMedia",
+            element: <SocialMedia />,
+          },
+          { path: "/services/get-inspired", element: <GetInspired /> },
           {
             path: "profile",
             element: <Profile />,

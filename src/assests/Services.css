@@ -1,0 +1,11 @@
+@import "./ultilize.css";
+
+.services__title {
+  font-size: 1.25rem;
+  margin: 2em 0;
+}
+
+.services__list {
+  margin-top: 3em;
+  gap: 2em;
+}

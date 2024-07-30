@@ -1,24 +1,47 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../assests/Sidebar.css";
 import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
+import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 
 const Sidebar = () => {
   const { handleLogout } = useContext(AuthContext);
+  const currentPath = useLocation().pathname;
   return (
     <nav className="sidebar">
       <div className="container">
-        <h3 className="sidebar__title">SmC AI</h3>
+        <Link to="/" className="sidebar__title">
+          SmC AI
+        </Link>
         <ul className="flex flex--col sidebar__list">
-          <li className="sidebar__link">
-            <Link to="/services">Services</Link>
+          <li
+            id="sidebar__services"
+            className={
+              "sidebar__link " +
+              (currentPath.includes("/services") ? "hightlight" : "")
+            }
+          >
+            <Link to="services">
+              <HandshakeOutlinedIcon />
+              Services
+            </Link>
           </li>
-          <li className="sidebar__link">
-            <Link to="/profile">Profile</Link>
+          <li
+            className={
+              "sidebar__link " +
+              (currentPath.includes("/profile") ? "hightlight" : "")
+            }
+          >
+            <Link to="profile">
+              <PermIdentityOutlinedIcon />
+              Profile
+            </Link>
           </li>
           <li className="sidebar__link">
             <button className="btn__logout" onClick={handleLogout}>
-              Logout
+              <LogoutOutlinedIcon /> Logout
             </button>
           </li>
         </ul>

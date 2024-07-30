@@ -1,0 +1,11 @@
+@import "./ultilize.css";
+
+.error-page {
+  align-items: center;
+}
+
+.error-page__title {
+  margin-top: 2em;
+  font-size: 2.5rem;
+  margin-bottom: 0.25em;
+}
