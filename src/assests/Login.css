@@ -1,11 +1,11 @@
 @import "./ultilize.css";
 
 .login__title {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: normal;
   line-height: 1.1;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .login__title span {
@@ -14,13 +14,8 @@
   user-select: none;
 }
 
-#prefix {
-  width: 10%;
-  padding: 0.75em;
-}
-
 #country-code {
-  flex-basis: min-content;
+  flex-basis: 40%;
 }
 
 .form__input {
@@ -31,6 +26,7 @@
   background-color: var(--input-background-color);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #cccccc;
+  flex-basis: 60%;
 }
 
 .form__input:focus {
@@ -41,9 +37,9 @@
 
 .form__login {
   margin-top: 2em;
-  padding: 2em;
+  padding: 1.5em;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--lighter-background-color);
@@ -56,4 +52,16 @@
   border-radius: 10px;
   padding: 0.75em;
   cursor: pointer;
+}
+
+@media (min-width: 650px) {
+  .login__title {
+    font-size: 3rem;
+    margin-top: 1.5em;
+  }
+
+  .form__login {
+    padding: 2em;
+    width: 50%;
+  }
 }

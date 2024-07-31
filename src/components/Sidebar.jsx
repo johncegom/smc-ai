@@ -25,7 +25,7 @@ const Sidebar = () => {
           >
             <Link to="services">
               <HandshakeOutlinedIcon />
-              Services
+              <span>Services</span>
             </Link>
           </li>
           <li
@@ -36,7 +36,7 @@ const Sidebar = () => {
           >
             <Link to="profile">
               <PermIdentityOutlinedIcon />
-              Profile
+              <span>Profile</span>
             </Link>
           </li>
           <li className="sidebar__link">

@@ -19,7 +19,9 @@ export default function Root() {
     <>
       <div className="flex">
         <Sidebar />
-        <Outlet />
+        <main className="main">
+          <Outlet />
+        </main>
       </div>
     </>
   );

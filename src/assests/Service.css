@@ -3,23 +3,42 @@
 .service {
   color: var(--primary-text-color);
   border: 2px solid var(--secondary-highlight-color);
-  padding: 1.25em 3em;
-  width: 50%;
+  padding: 0.75em 1em;
+  width: 100%;
   border-radius: 10px;
   gap: 0.75em;
 }
 
 .service__thumbnail {
   align-self: center;
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
 }
 
 .service__title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 0.25em;
 }
 
 .service__description {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--secondary-text-color);
+}
+
+@media (min-width: 650px) {
+  .service {
+    padding: 1.25em 3em;
+    width: 50%;
+  }
+
+  .service__thumbnail {
+    font-size: 2rem !important;
+  }
+
+  .service__title {
+    font-size: 1.125rem;
+  }
+
+  .service__description {
+    font-size: 0.9rem;
+  }
 }

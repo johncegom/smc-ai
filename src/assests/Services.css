@@ -1,11 +1,22 @@
 @import "./ultilize.css";
 
 .services__title {
-  font-size: 1.25rem;
   margin: 2em 0;
+  font-size: 1.125rem;
 }
 
 .services__list {
   margin-top: 3em;
-  gap: 2em;
+  gap: 1.25em;
+}
+
+@media (min-width: 700px) {
+  .services__title {
+    font-size: 1.5rem;
+    margin: 1.5em 0;
+  }
+  .services__list {
+    margin-top: 3em;
+    gap: 2em;
+  }
 }

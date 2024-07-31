@@ -1,7 +1,16 @@
 @import "./ultilize.css";
 
-.from-scratch__caption {
-  margin: 1em 0;
+.from-scratch__title {
+  margin: 2em 0;
+  font-size: 1.125rem;
+}
+
+.from-scratch__description {
+  font-size: 0.9rem;
+}
+
+.from-scratch__description + .from-scratch__description {
+  margin-top: 0.5em;
 }
 
 .btn__generate {
@@ -14,4 +23,19 @@
 .service__list {
   margin-top: 3em;
   gap: 2em;
+}
+
+@media (min-width: 650px) {
+  .from-scratch__title {
+    margin: 1em 0;
+    font-size: 1.5rem;
+  }
+
+  .from-scratch__description {
+    font-size: 1rem;
+  }
+
+  .from-scratch__description + .from-scratch__description {
+    margin-top: 0.5em;
+  }
 }

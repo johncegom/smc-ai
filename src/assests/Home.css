@@ -1,11 +1,23 @@
 @import "./ultilize.css";
 
 .home__title {
+  font-size: 1.75rem;
   margin-top: 0.5em;
 }
 
 .home__subtitle {
   margin-top: 1em;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--secondary-text-color);
+}
+
+@media (min-width: 650px) {
+  .home__title {
+    font-size: 2rem;
+    margin-top: 0.5em;
+  }
+
+  .home__subtitle {
+    font-size: 1rem;
+  }
 }

@@ -1,1 +1,12 @@
 @import "./ultilize.css";
+
+.main {
+  flex-basis: 50%;
+  min-width: 0;
+}
+
+@media (min-width: 650px) {
+  .main {
+    flex-basis: 75%;
+  }
+}
