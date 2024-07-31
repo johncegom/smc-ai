@@ -103,4 +103,4 @@ Because of lacking experience, only the following section is completed, the rest
 
 ## Testing
 
-For testing purposes, access code API responses from the frontend and log them into the console. To test OTP code through SMS (Twilio), follow the Twilio guide to create a trial account and make sure your mobile phone is verified and can receive SMS message from Twilio via API on Twilio console.
+For testing purposes, access code API from backend responses to the frontend and the frontend log them into the console. To test OTP code through SMS (Twilio), follow the Twilio guide to create a trial account and make sure your mobile phone is verified and can receive SMS message from Twilio via API on Twilio console.
