@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import "../assests/SocialMedia.css";
 import { useState } from "react";
 import PostCaption from "../components/PostCaption";
+import { v4 as uuidv4 } from "uuid";
 
 const SocialMedia = () => {
   const { socialMedia } = useParams();
@@ -103,9 +104,11 @@ const SocialMedia = () => {
           <h3 className="social-media__subtitle">Captions generated for you</h3>
         )}
         {isGenerated &&
-          postCaptions?.map((postCaption, index) => {
+          postCaptions?.map((postCaption) => {
+            const captionUUID = uuidv4();
             return (
               <PostCaption
+                key={captionUUID}
                 caption={postCaption}
                 firstButton="Share"
                 secondButton="Save"

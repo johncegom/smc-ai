@@ -1,10 +1,11 @@
-# SOCIAL-MEDIA-GEN-AI
+# Social Media Caption GenAI
 
-A project to create a social media platform using AI for content generation.
+A project to create a platform using AI to generate caption(s) for social media content.
 
 ## Table of Contents
 
 - [Project Structure](#project-structure)
+- [Complete Section](#complete-section)
 - [How to Run](#how-to-run)
   - [Frontend](#frontend)
   - [Backend](#backend)
@@ -37,6 +38,17 @@ SOCIAL-MEDIA-GEN-AI
 ```
 
 The project is divided into two parts: Frontend and Backend. The backend source is stored in the `backend` folder. To keep things simple, the backend is built as simply as possible.
+
+## Complete Section
+
+Because of lacking experience, only the following section is completed, the rest is not complete and will be completed in future (as a personal project!):
+
+- **Login**
+- **Services**
+- **Start from scratch**
+- **Facebook post**
+- **Instagram post**
+- **Twitter(X) post**
 
 ## How to Run
 
@@ -80,4 +92,4 @@ The project is divided into two parts: Frontend and Backend. The backend source 
 
 ## Testing
 
-For testing purposes, access code API responses from the frontend and log them into the console. To test OTP code through SMS (Twilio), follow the Twilio guide to create a trial account and verify your mobile phone number.
+For testing purposes, access code API responses from the frontend and log them into the console. To test OTP code through SMS (Twilio), follow the Twilio guide to create a trial account and make sure your mobile phone is verified and can receive SMS message from Twilio via API on Twilio console.

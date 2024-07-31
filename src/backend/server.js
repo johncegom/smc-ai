@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.post("/CreateNewAccessCode", async (req, res) => {
   const { phoneNumber } = req.body;
   const accessCode = generateAccessCode();
-  // await sendSMSThroughTwilio(phoneNumber, accessCode);
+  await sendSMSThroughTwilio(phoneNumber, accessCode);
   try {
     await setDoc(
       doc(db, "users", phoneNumber),
