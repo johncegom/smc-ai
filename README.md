@@ -6,6 +6,7 @@ A project to create a platform using AI to generate caption(s) for social media 
 
 - [Project Structure](#project-structure)
 - [Complete Section](#complete-section)
+- [Images](#images)
 - [How to Run](#how-to-run)
   - [Frontend](#frontend)
   - [Backend](#backend)
@@ -49,6 +50,16 @@ Because of lacking experience, only the following section is completed, the rest
 - **Facebook post**
 - **Instagram post**
 - **Twitter(X) post**
+
+## Images
+
+![First Login page](/public/images/login-1.png "Login - Phase 1")
+![Second Login page](/public/images/login-2.png "Login - Phase 2")
+![Home page](/public/images/welcome.png "Welcome")
+![Services page](/public/images/services-1.png "Services")
+![Start from scratch page](/public/images/services-2.png "Start from scratch")
+![Instagram post caption generation page](/public/images/services-3.png "Instagram post captions generation")
+![Facebook post caption generation page with generated captions](/public/images/services-4.png "Instagram post captions generated")
 
 ## How to Run
 
