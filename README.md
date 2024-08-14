@@ -42,8 +42,6 @@ The project is divided into two parts: Frontend and Backend. The backend source 
 
 ## Complete Section
 
-Because of lacking experience, only the following section is completed, the rest is not complete and will be completed in future (as a personal project!):
-
 - **Login**
 - **Services**
 - **Start from scratch**
